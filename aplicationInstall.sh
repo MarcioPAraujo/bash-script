@@ -56,7 +56,7 @@ wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.20/bin/apache-tomcat-10.1.2
 sudo chmod -R 777 /opt
 sudo mkdir /opt/tomcat
 sudo tar xzvf apache-tomcat-10.1.20.tar.gz -C /opt/tomcat --strip-components=1
-USER = whoami
+USER = $(whoami)
 sudo chown -R $USER /opt/tomcat 
 wget https://www.torproject.org/dist/torbrowser/13.0.13/tor-browser-linux-x86_64-13.0.13.tar.xz
 wget https://github.com/ankitects/anki/releases/download/23.12.1/anki-23.12.1-linux-qt6.tar.zst
